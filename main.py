@@ -21,7 +21,7 @@ def PC(img_path):
         y = np.array(k)
         n = len(y)
         x = range(0, n)
-        tck = interpolate.splrep(x, y, s=1280, k=5)
+        tck = interpolate.splrep(x, y, s=128, k=5)
         x_new = np.linspace(min(x), max(x), img.shape[0])
         y_fit = interpolate.BSpline(*tck)(x_new)
         fx = y_fit
@@ -50,7 +50,7 @@ def PC_180(img_path):
         y = np.array(k)
         n = len(y)
         x = range(0, n)
-        tck = interpolate.splrep(x, y, s=1280, k=5)
+        tck = interpolate.splrep(x, y, s=128, k=5)
         x_new = np.linspace(min(x), max(x), img.shape[1])
         y_fit = interpolate.BSpline(*tck)(x_new)
 
@@ -80,13 +80,13 @@ def compare_matrices(f1, f2):   #融合两个矩阵，相同位置有输入两�
     return new_matrix
 
 if __name__ == '__main__':
-    # read_path(r"D:\finger vein\Schwerer Gustav\cccvb")
+
     img_path = r" your img_path"#pic path
     f1 = PC(img_path)
     f2 = PC_180(img_path)
     new_matrix1 = compare_matrices(f1, f2)
     f3 = new_matrix1
     cv2.imshow('iii', f3)
-    # cv2.imwrite(r"C:\Users\user\Desktop\724doublezjz.jpg",new_matrix1)
+
     cv2.waitKey(0)
     cv2.destroyAllWindows()
