@@ -45,3 +45,7 @@ darktest is an image of a darkened vein on the back of a hand, accompanied by tw
 
 It is very obvious that using the main2 method can eliminate the step of image enhancement, and theoretically, image denoising can be done well.
 
+
+
+
+
