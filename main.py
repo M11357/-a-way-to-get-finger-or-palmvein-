@@ -6,7 +6,7 @@ import time
 from scipy import interpolate
 
 
-'''主曲率方法'''
+''主曲率方法''/#A Method for Extracting Veins Based on Principal Curvature Theory
 
 def PC(img_path):
     img = cv2.imread(img_path, 0)   #确保图像只保留一个通道
@@ -81,7 +81,7 @@ def compare_matrices(f1, f2):   #融合两个矩阵，相同位置有输入两�
 
 if __name__ == '__main__':
     # read_path(r"D:\finger vein\Schwerer Gustav\cccvb")
-    img_path = r"C:\Users\user\Desktop\zjz.png"
+    img_path = r" your img_path"#pic path
     f1 = PC(img_path)
     f2 = PC_180(img_path)
     new_matrix1 = compare_matrices(f1, f2)
