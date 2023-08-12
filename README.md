@@ -15,5 +15,17 @@ A Method for Extracting Veins Based on Principal Curvature Theory
 
 
 
+main2.py是采用最小二乘法做的曲线拟合，进而找到曲率最大点，main.py则采用了b样条曲线
+
+
+
+main2. py is a curve fitting using the least squares method to find the point of maximum curvature, while main.py uses a b-spline curve
+
+
+
+
+
+
+
 
 
