@@ -23,7 +23,11 @@ main2. py is a curve fitting using the least squares method to find the point of
 
 
 
+main2长于稳健性，在【531】,{531clahe},(531ssr)上的表现都差不多，而且不会像main一样把大量毛细血管导出来；main的好处是，在常规边缘检测项目中有更好的表现。
 
+
+
+main2 excels in robustness and performs similarly on [531], {531clahe}, and (531ssr), and does not lead out a large number of capillaries like main; The advantage of main is that it performs better in conventional edge detection projects.
 
 
 
