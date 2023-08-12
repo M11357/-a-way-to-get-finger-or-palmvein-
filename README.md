@@ -39,9 +39,9 @@ darktest is an image of a darkened vein on the back of a hand, accompanied by tw
 
 
 
-非常明显地，使用main与main2这两种方法，可以省去图像增强的步骤，理论上做好图像降噪就可以艹图了。
+非常明显地，使用main2这种方法，可以省去图像增强的步骤，理论上做好图像降噪就可以艹图了。
 
 
 
-It is very obvious that using the main and main2 methods can eliminate the step of image enhancement, and theoretically, image denoising can be done well.
+It is very obvious that using the main2 method can eliminate the step of image enhancement, and theoretically, image denoising can be done well.
 
